@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Fast Memory!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Fast Memory
+    </h1>
+    <p>
+      Welcome to the game! Repeat back the pattern by pressing the buttons.
+    </p>
+    <button id ="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class = "hidden" onclick="stopGame()">
+      Stop
+    </button>
+    
+    <div id = "gameButtonArea">
+      <button id = "button1" onmousedown="startTone(1); pressImage(1);" onmouseup="stopTone(); clearImage(1);" onclick="guess(1)"> <img id = "img1" class = "hidden" src ="https://cdn.glitch.global/fa53cadc-2e95-4f15-8cea-c24b0016df6d/%E2%80%94Pngtree%E2%80%94black%20elegant%20grand%20piano_4453268.png?v=1648865444910"> </button>
+      <button id = "button2" onmousedown="startTone(2); pressImage(2);" onmouseup="stopTone(); clearImage(2);" onclick="guess(2)"> <img id = "img2" class = "hidden" src ="https://cdn.glitch.global/fa53cadc-2e95-4f15-8cea-c24b0016df6d/20754-8-taylor-acoustic-guitar_200x200.png?v=1648865262001"> </button>
+      <button id = "button3" onmousedown="startTone(3); pressImage(3);" onmouseup="stopTone(); clearImage(3);" onclick="guess(3)"> <img id = "img3" class = "hidden" src = "https://cdn.glitch.global/fa53cadc-2e95-4f15-8cea-c24b0016df6d/pngfind.com-trumpet-png-482645.png?v=1648865446902"> </button> 
+      <button id = "button4" onmousedown="startTone(4); pressImage(4);" onmouseup="stopTone(); clearImage(4);" onclick="guess(4)"> <img id = "img4" class = "hidden" src = "https://cdn.glitch.global/fa53cadc-2e95-4f15-8cea-c24b0016df6d/flute-30561%20(1).png?v=1648865567028"> </button>
+      <button id = "button5" onmousedown="startTone(5); pressImage(5);" onmouseup="stopTone(); clearImage(5);" onclick="guess(5)"> <img id = "img5" class = "hidden" src ="https://cdn.glitch.global/fa53cadc-2e95-4f15-8cea-c24b0016df6d/2-2-violin-png_800x800%20(1).png?v=1648865729812"> </button>
+      <button id = "button6" onmousedown="startTone(6); pressImage(6);" onmouseup="stopTone(); clearImage(6);" onclick="guess(6)"> <img id = "img6" class = "hidden" src ="https://cdn.glitch.global/fa53cadc-2e95-4f15-8cea-c24b0016df6d/%E2%80%94Pngtree%E2%80%94red%20gong%20drum%20decoration%20illustration_4530303%20(2).png?v=1648865840332"> </button>
+    </div>
+  </body>
+</html>
