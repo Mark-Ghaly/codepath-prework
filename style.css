@@ -1,0 +1,109 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: slategrey;
+  background-image: url("https://cdn.glitch.global/fa53cadc-2e95-4f15-8cea-c24b0016df6d/brain-transparent-background-5.png?v=1648853998200"); 
+  color: white;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+}
+
+#countdown{
+  width: 60px;
+  border:3px;
+  border-style:solid; 
+  border-color:#FF0000; 
+  padding: 1em;
+}
+button {
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#button1 {
+ background: lightgreen;
+}
+
+#button1:active,
+#button1.lit {
+  background: green;
+}
+
+#button2 {
+  background: lightblue;
+}
+
+#button2:active,
+#button2.lit {
+  background: blue;
+}
+
+#button3 {
+  background: pink;
+}
+
+#button3:active,
+#button3.lit {
+  background: red;
+}
+
+#button4 {
+  background: lightyellow;
+}
+
+#button4:active,
+#button4.lit {
+  background: yellow;
+}
+
+#button5 {
+  background: burlywood;
+}
+
+#button5:active,
+#button5.lit {
+  background: chocolate;
+}
+#button6 {
+  background: darkorchid;
+}
+
+#button6:active,
+#button6.lit {
+  background: darkmagenta;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
